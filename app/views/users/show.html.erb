@@ -1,0 +1,12 @@
+<p id="notice">
+    <%= notice %>
+</p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Catatan Ku', notes_path %> | 
+<%= link_to "Logout", logout_users_path, method: :delete, data: { confirm: "Apakah anda  Yakin ?" } %>
